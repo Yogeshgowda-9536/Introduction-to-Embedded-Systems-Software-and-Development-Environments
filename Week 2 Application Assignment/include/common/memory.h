@@ -1,39 +1,3 @@
-/******************************************************************************
- * Copyright (C) 2017 by Alex Fosdick - University of Colorado
- *
- * Redistribution, modification or use of this software in source or binary
- * forms is permitted as long as the files maintain this copyright. Users are 
- * permitted to modify this and use it to learn about the field of embedded
- * software. Alex Fosdick and the University of Colorado are not liable for any
- * misuse of this material. 
- *
- *****************************************************************************/
-/**
- * @file memory.h
- * @brief Abstraction of memory read and write operations
- *
- * This header file provides an abstraction of reading and
- * writing to memory via function calls. 
- *
- * @author Alex Fosdick
- * @date April 1 2017
- *
- */
-#ifndef __MEMORY_H__
-#define __MEMORY_H__
-
-/**
- * @brief Sets a value of a data array 
- *
- * Given a pointer to a char data set, this will set a provided
- * index into that data set to the value provided.
- *
- * @param ptr Pointer to data array
- * @param index Index into pointer array to set value
- * @param value value to write the the locaiton
- *
- * @return void.
- */
 void set_value(char * ptr, unsigned int index, char value);
 
 /**
